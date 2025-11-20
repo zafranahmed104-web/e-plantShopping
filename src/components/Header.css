@@ -1,0 +1,100 @@
+.header {
+  background-color: #2d3748;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.header-logo:hover {
+  color: #4CAF50;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: white;
+  color: #2d3748;
+}
+
+.cart-icon-btn {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-icon {
+  color: white;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e53e3e;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
